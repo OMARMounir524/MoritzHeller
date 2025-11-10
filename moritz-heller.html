@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moritz Heller – Digital Commerce & Marketing Strategy</title>
+    <meta name="description" content="Persönliche Webseite von Moritz Heller. Unabhängiges Profil mit Leistungen: Beratung, Vorträge, 1:1 Sparring und Beteiligungen." />
+
+    <!-- Site favicon (MH Beteiligungen logo) -->
+    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D4D0BAQEUkEyl6DXN9w/company-logo_200_200/company-logo_200_200/0/1716128760058/mh_beteiligungen_gmbh_logo?e=1763596800&v=beta&t=HEKEWQfPQx1Z0FZXD2UVYLuLVfxVDrHDDxAEd-teT50" type="image/png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Fonts & Tailwind -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      :root { color-scheme: light; }
+      body { font-family: Inter, ui-sans-serif, system-ui; }
+      .serif { font-family: 'Playfair Display', Georgia, ui-serif, serif; }
+      /* Subtle focus ring for accessibility */
+      .focus-ring:focus { outline: 2px solid rgb(37,99,235); outline-offset: 2px; }
+      header { background: rgba(255,255,255,0.85); backdrop-filter: blur(6px); }
+    </style>
+  </head>
+  <body class="antialiased text-slate-900 overflow-x-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50 [background-image:radial-gradient(at_20%_30%,rgba(37,99,235,0.08)_0%,transparent_70%),radial-gradient(at_80%_80%,rgba(37,99,235,0.05)_0%,transparent_70%)]">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-40 border-b border-slate-300 shadow-md bg-gradient-to-r from-white via-blue-50 to-white backdrop-blur-sm">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="#hero" class="flex items-center gap-3 font-semibold" aria-label="Startseite">
+            <!-- Simple text mark instead of logo -->
+            <span class="serif text-xl tracking-tight">Moritz Heller</span>
+          </a>
+          <nav class="hidden md:flex items-center gap-6 text-sm">
+            <a href="#hero" class="hover:text-blue-600">Start</a>
+            <a href="#about" class="hover:text-blue-600">Über mich</a>
+            <a href="#services" class="hover:text-blue-600">Leistungen</a>
+            <a href="#ventures" class="hover:text-blue-600">Beteiligungen</a>
+            <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
+          </nav>
+          <button id="menu-btn" class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-300 px-3 py-2 text-sm focus-ring hover:scale-[1.02] transition-transform duration-200" aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen">Menü</button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden pb-4" role="navigation" aria-label="Hauptnavigation mobil">
+          <nav class="flex flex-col gap-3 text-sm">
+            <a href="#hero" class="hover:text-blue-600">Start</a>
+            <a href="#about" class="hover:text-blue-600">Über mich</a>
+            <a href="#services" class="hover:text-blue-600">Leistungen</a>
+            <a href="#ventures" class="hover:text-blue-600">Beteiligungen</a>
+            <a href="#kontakt" class="hover:text-blue-600">Kontakt</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero: type-led, editorial -->
+    <section id="hero" class="relative py-20 sm:py-28 bg-gradient-to-b from-blue-50 via-white to-slate-50 overflow-hidden">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-7">
+          <p class="text-sm uppercase tracking-wider"><span style="color:#ff1493;">Private Beratung?? auch Platzhalter</span></p>
+          <h1 class="serif mt-3 text-4xl sm:text-6xl font-semibold leading-tight"><span style="color:#ff1493;">E-com??</span></h1>
+          <p class="mt-5 text-lg max-w-2xl"><span style="color:#ff1493;">Platzhalter</span></p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-3">
+            <a href="#kontakt" class="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 hover:bg-blue-700 transition focus-ring hover:scale-[1.02] transition-transform duration-200">Kontakt aufnehmen</a>
+            <a href="#services" class="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 hover:bg-blue-700 transition focus-ring hover:scale-[1.02] transition-transform duration-200">Leistungen ansehen</a>
+          </div>
+        </div>
+        <div class="lg:col-span-5">
+          <div class="rounded-full overflow-hidden">
+            <img src="https://cdn.prod.website-files.com/651e9b7ad3f55464374d3cbf/6825f63627a7ba28632f9a55_Moritz.png" alt="Porträt von Moritz Heller" class="block w-full h-full object-cover rounded-full" />
+          </div>
+          <p class="mt-3 text-xs"><span style="color:#ff1493;">passt? oder anderes photo?</span></p>
+        </div>
+      </div>
+      <div class="absolute -z-10 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl top-10 right-10"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-14 border-t border-b border-slate-300 bg-gradient-to-b from-blue-50 via-white to-slate-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="serif text-3xl sm:text-4xl font-semibold">Über mich</h2>
+        <div class="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mt-3"></div>
+        <div class="mt-4 grid md:grid-cols-12 gap-8">
+          <p class="md:col-span-7 leading-relaxed"><span style="color:#ff1493;">brauche auch Text hier</span></p>
+          <ul class="md:col-span-5 text-sm text-slate-600 space-y-2">
+            <li><span style="color:#ff1493;">• Sparring für Gründer &amp; Führungskräfte</span></li>
+            <li><span style="color:#ff1493;">• Strategie?? kA was dazu noch kommt</span></li>
+            <li><span style="color:#ff1493;">• (Platzhalter)</span></li>
+            <li><span style="color:#ff1493;">• (Platzhalter)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services: editorial list rows -->
+    <section id="services" class="py-20 bg-gradient-to-b from-blue-50 via-white to-slate-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-end justify-between gap-4">
+          <div>
+            <h2 class="serif text-3xl sm:text-4xl font-semibold">Leistungen</h2>
+            <div class="h-0.5 w-16 bg-blue-600/20 mt-2"></div>
+          </div>
+          <a href="#kontakt" class="hidden sm:inline-flex items-center text-blue-700 hover:underline">Projekt anfragen →</a>
+        </div>
+        <div class="mt-8">
+          <!-- Row -->
+          <div class="group flex items-start gap-6 py-6 px-4 rounded-lg bg-white/70 backdrop-blur-sm border border-slate-200 hover:border-blue-400 hover:shadow-lg transition">
+            <div class="min-w-0">
+              <h3 class="text-lg font-semibold group-hover:text-blue-700 transition"><span style="color:#ff1493;">Agentur-Analyse &amp; Steuerung</span></h3>
+              <p class="mt-1"><span style="color:#ff1493;">hab ich alles in dem Bereich von Chat generieren lassen, brauche Feedback, Änderungen maybe?</span></p>
+            </div>
+          </div>
+          <!-- Row -->
+          <div class="group flex items-start gap-6 py-6 px-4 rounded-lg bg-white/70 backdrop-blur-sm border border-slate-200 hover:border-blue-400 hover:shadow-lg transition">
+            <div class="min-w-0">
+              <h3 class="text-lg font-semibold group-hover:text-blue-700 transition"><span style="color:#ff1493;">Public Speaking &amp; Vorträge</span></h3>
+              <p class="mt-1"><span style="color:#ff1493;">Konferenz- und Inhouse-Vorträge zu Commerce-Strategie, Marketing-Organisation und Wachstumshebeln.</span></p>
+            </div>
+          </div>
+          <!-- Row -->
+          <div class="group flex items-start gap-6 py-6 px-4 rounded-lg bg-white/70 backdrop-blur-sm border border-slate-200 hover:border-blue-400 hover:shadow-lg transition">
+            <div class="min-w-0">
+              <h3 class="text-lg font-semibold group-hover:text-blue-700 transition"><span style="color:#ff1493;">1:1 Sparring (60 Minuten)</span></h3>
+              <p class="mt-1"><span style="color:#ff1493;">Fokussierte Session für Gründer:innen &amp; Führungskräfte – konkrete Entscheidungen, keine Spielerei. 899 €</span></p>
+            </div>
+          </div>
+          <!-- Row -->
+          <div class="group flex items-start gap-6 py-6 px-4 rounded-lg bg-white/70 backdrop-blur-sm border border-slate-200 hover:border-blue-400 hover:shadow-lg transition">
+            <div class="min-w-0">
+              <h3 class="text-lg font-semibold group-hover:text-blue-700 transition"><span style="color:#ff1493;">Advisory (laufend)</span></h3>
+              <p class="mt-1"><span style="color:#ff1493;">Regelmäßiges Sparring mit klaren Zielen, Roadmap und Verantwortlichkeiten.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8">
+          <a href="#kontakt" class="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 hover:bg-blue-700 transition focus-ring hover:scale-[1.02] transition-transform duration-200">Verfügbarkeit anfragen</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ventures / Beteiligungen -->
+    <section id="ventures" class="py-20 bg-gradient-to-b from-slate-50 via-blue-50 to-white border-t border-slate-300">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="serif text-3xl sm:text-4xl font-semibold">Beteiligungen</h2>
+        <div class="h-0.5 w-16 bg-blue-600/20 mt-2"></div>
+        <p class="mt-3 max-w-2xl"><span style="color:#ff1493;">Ausgewählte Engagements und Beteiligungen (Platzhalter)</span></p>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <a href="https://rianthis.de/" target="_blank" rel="noopener" class="block rounded-xl p-6 bg-[#01381f] text-white transition transform hover:scale-[1.02] hover:shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="flex flex-col items-center h-full">
+              <div class="flex-1 w-full flex items-center justify-center mb-4">
+                <img src="https://rianthis.de/cdn/shop/files/logo-weiss-rianthis-shopify-agentur.png?v=1704289548&width=300" alt="RIANTHIS Logo" class="h-12 object-contain" />
+              </div>
+              <div class="text-sm opacity-90"><span style="color:#ff1493;">Brand &amp; Commerce.</span></div>
+            </div>
+          </a>
+          <a href="https://www.efly-amz.com/" target="_blank" rel="noopener" class="block rounded-xl p-6 text-[#f07b16] bg-gradient-to-b from-white via-orange-100 to-white transition transform hover:scale-[1.02] hover:shadow-md relative overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300 shadow-[0_0_20px_rgba(240,123,22,0.15)]">
+            <div class="flex flex-col items-center h-full">
+              <div class="flex-1 w-full flex items-center justify-center mb-4">
+                <img src="https://cdn.prod.website-files.com/651e9b79d3f55464374d3c75/6534fa896047abfdf86b1f22_header-logo-p-500.png" alt="eFLY Logo" class="h-12 object-contain" />
+              </div>
+              <div class="text-sm opacity-90"><span style="color:#ff1493;">Digital Commerce &amp; Marketing.</span></div>
+            </div>
+          </a>
+          <a href="mh-beteiligungen.html" target="_blank" rel="noopener" class="block rounded-xl p-6 bg-[#325170] text-white transition transform hover:scale-[1.02] hover:shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="flex flex-col items-center h-full">
+              <div class="flex-1 w-full flex items-center justify-center mb-4">
+                <img src="https://media.licdn.com/dms/image/v2/D4D3DAQEZffK_YWcBRA/image-scale_191_1128/image-scale_191_1128/0/1716128663646/mh_beteiligungen_gmbh_cover?e=1762945200&v=beta&t=A7simZ3pZXG35GHR6BvC3dWu8jgExOCFtrx8VSyRxfY" alt="MH Beteiligungen Logo" class="h-12 object-contain" />
+              </div>
+              <div class="text-sm opacity-90"><span style="color:#ff1493;">Unternehmerische Beteiligungen.</span></div>
+            </div>
+          </a>
+          <a href="https://www.emm-solutions.de/" target="_blank" rel="noopener" class="block rounded-xl p-6 bg-[#0e0f10] text-white transition transform hover:scale-[1.02] hover:shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="flex flex-col items-center h-full">
+              <div class="flex-1 w-full flex items-center justify-center mb-4">
+                <img src="https://cdn.prod.website-files.com/64f1b047f383f8bbe831589a/64f1b11d95e4d28a0d795dd8_main%20logo-p-500.png" alt="Emm! solutions Logo" class="h-12 object-contain" />
+              </div>
+              <div class="text-sm opacity-90"><span style="color:#ff1493;">Emm! solutions</span></div>
+            </div>
+          </a>
+          <a href="https://innkeepr.ai/" target="_blank" rel="noopener" class="block rounded-xl p-6 bg-[#ffffff] text-black transition transform hover:scale-[1.02] hover:shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+            <div class="flex flex-col items-center h-full">
+              <div class="flex-1 w-full flex items-center justify-center mb-4">
+                <img src="https://framerusercontent.com/images/WUeStQLp9NQhDALGSd40Lq6cI.png?scale-down-to=512" alt="Innkeepr Logo" class="h-12 object-contain" />
+              </div>
+              <div class="text-sm opacity-90"><span style="color:#ff1493;">Innkeepr</span></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontakt" class="relative pt-8 pb-[2px] overflow-hidden bg-gradient-to-r from-blue-50 via-white to-slate-50 border-t-2 border-blue-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+          <div>
+            <h3 class="serif text-xl font-semibold">Kontakt</h3>
+            <p class="mt-2"><span style="color:#ff1493;">Schreiben Sie mir für Projekte, Vorträge oder Sparring.</span></p>
+            <div class="mt-4 flex flex-wrap gap-3">
+              <a href="mailto:moritz.heller@mh-beteiligungen.com" class="inline-flex items-center rounded-lg px-4 py-2 text-sm bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 hover:bg-blue-700 transition focus-ring">moritz.heller@mh-beteiligungen.com</a>
+            </div>
+          </div>
+          <div class="text-sm text-slate-600">
+            <div class="font-medium">Social</div>
+            <ul class="mt-2 space-y-1">
+              <li><a class="hover:text-blue-700" href="https://www.linkedin.com/in/moritz-heller-ab1310183/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a class="hover:text-blue-700" href="https://www.youtube.com/@MoritzHeller_eFLY" target="_blank" rel="noopener">YouTube</a></li>
+              <li><a class="hover:text-blue-700" href="https://www.instagram.com/moritz__heller/?hl=de" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a class="hover:text-blue-700" href="https://www.tiktok.com/@moritzheller" target="_blank" rel="noopener">TikTok</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4 flex items-center justify-between text-xs text-slate-500">
+          <div><span id="year"></span> Moritz&nbsp;Heller</div>
+          <div class=""><span style="color:#ff1493;">Impressum • Datenschutz</span></div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      if (btn && menu) {
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+          menu.classList.toggle('hidden');
+        });
+      }
+      // Smooth scroll without changing the URL (no #hash)
+      const internalLinks = document.querySelectorAll('a[href^="#"]');
+      internalLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href');
+          const id = href.slice(1);
+          const target = document.getElementById(id);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile menu after navigation
+            if (menu && !menu.classList.contains('hidden')) {
+              menu.classList.add('hidden');
+              btn.setAttribute('aria-expanded', 'false');
+            }
+          }
+        });
+      });
+      // Set current year
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
