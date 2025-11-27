@@ -7,7 +7,7 @@
     <meta name="description" content="Persönliche Webseite von Moritz Heller. Unabhängiges Profil mit Leistungen: Beratung, Vorträge, 1:1 Sparring und Beteiligungen." />
 
     <!-- Site favicon (MH Beteiligungen logo) -->
-    <link rel="icon" href="https://media.licdn.com/dms/image/v2/D4D0BAQEUkEyl6DXN9w/company-logo_200_200/company-logo_200_200/0/1716128760058/mh_beteiligungen_gmbh_logo?e=2147483647&v=beta&t=o90YZKfw5vLFtcpkpYw3waztWkqGbuqxsFOTkjEJCgo" type="image/png">
+    <link rel="icon" href="https://res.cloudinary.com/dujghnaly/image/upload/v1764241449/mh_beteiligungen_gmbh_logo_mxvhsh.jpg" type="image/png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Fonts & Tailwind -->
@@ -23,6 +23,16 @@
       /* Subtle focus ring for accessibility */
       .focus-ring:focus { outline: 2px solid rgb(37,99,235); outline-offset: 2px; }
       header { background: rgba(255,255,255,0.85); backdrop-filter: blur(6px); }
+      .section-track {
+        background-color: #ffffff !important;
+        background-image: none !important;
+        transition: background-image 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
+      }
+      .section-track-highlighted {
+        background-image: none !important;
+        background-color: #eff6ff;
+        box-shadow: 0 0 60px rgba(37,99,235,0.08) inset;
+      }
     </style>
   </head>
   <body class="antialiased text-slate-900 overflow-x-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50 [background-image:radial-gradient(at_20%_30%,rgba(37,99,235,0.08)_0%,transparent_70%),radial-gradient(at_80%_80%,rgba(37,99,235,0.05)_0%,transparent_70%)]">
@@ -57,11 +67,12 @@
     </header>
 
     <!-- Hero: type-led, editorial -->
-    <section id="hero" class="relative py-20 sm:py-28 bg-gradient-to-b from-blue-50 via-white to-slate-50 overflow-hidden">
+    <section id="hero" class="section-track relative py-20 sm:py-28 bg-gradient-to-b from-blue-50 via-white to-slate-50 overflow-hidden">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         <div class="lg:col-span-7">
           <p class="text-sm uppercase tracking-wider text-slate-700">Speaking • Beratung • Advisory Board</p>
-          <h1 class="serif mt-3 text-4xl sm:text-6xl font-semibold leading-tight">eCommerce &amp; Agency Know</h1>
+          <h1 class="serif mt-3 text-4xl sm:text-6xl font-semibold leading-tight">eCommerce &amp; Agency</h1>
+          <div class="h-0.5 w-16 bg-blue-600/20 mt-2"></div>
           <p class="mt-5 text-lg max-w-2xl text-slate-700">
             Ich biete strategische Beratung für Brands &amp; Markenhersteller, die ihr digitales Wachstum optimieren müssen, und unterstütze Dienstleister (Agenturen und SaaS) aktiv beim Aufbau und der Skalierung komplexer Geschäftsmodelle.
           </p>
@@ -80,10 +91,10 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="py-14 border-t border-b border-slate-300 bg-gradient-to-b from-blue-50 via-white to-slate-50">
+    <section id="about" class="section-track py-14 border-t border-b border-slate-300 bg-gradient-to-b from-blue-50 via-white to-slate-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="serif text-3xl sm:text-4xl font-semibold">Über mich</h2>
-        <div class="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full mt-3"></div>
+        <div class="h-0.5 w-16 bg-blue-600/20 mt-2"></div>
         <div class="mt-4 grid md:grid-cols-12 gap-8">
           <p class="md:col-span-7 leading-relaxed text-slate-800">
             Über 10 Jahre Erfahrung als Berater im eCommerce- und Dienstleistungsgeschäft. In dieser Zeit habe ich zwei Kernbereiche erfolgreich unterstützt:
@@ -97,14 +108,13 @@
     </section>
 
     <!-- Services: editorial list rows -->
-    <section id="services" class="py-20 bg-gradient-to-b from-blue-50 via-white to-slate-50">
+    <section id="services" class="section-track py-20 bg-gradient-to-b from-blue-50 via-white to-slate-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-end justify-between gap-4">
           <div>
             <h2 class="serif text-3xl sm:text-4xl font-semibold">Leistungen</h2>
             <div class="h-0.5 w-16 bg-blue-600/20 mt-2"></div>
           </div>
-          <a href="#kontakt" class="hidden sm:inline-flex items-center text-blue-700 hover:underline">Projekt anfragen →</a>
         </div>
         <div class="mt-8">
           <!-- Row -->
@@ -137,30 +147,21 @@
           <!-- Row -->
           <div class="group flex items-start gap-6 py-6 px-4 rounded-lg bg-white/70 backdrop-blur-sm border border-slate-200 hover:border-blue-400 hover:shadow-lg transition">
             <div class="min-w-0">
-              <h3 class="text-lg font-semibold group-hover:text-blue-700 transition">Advisory (laufend)</h3>
+              <h3 class="text-lg font-semibold group-hover:text-blue-700 transition">Advisory Board</h3>
               <p class="mt-1 text-slate-700">
                 Regelmäßiges Sparring mit klaren Zielen, klarer Roadmap und definierten Verantwortlichkeiten.
               </p>
             </div>
           </div>
-          <!-- Row -->
-          <div class="group flex items-start gap-6 py-6 px-4 rounded-lg bg-white/70 backdrop-blur-sm border border-slate-200 hover:border-blue-400 hover:shadow-lg transition">
-            <div class="min-w-0">
-              <h3 class="text-lg font-semibold group-hover:text-blue-700 transition">Angel Investments</h3>
-              <p class="mt-1 text-slate-700">
-                Selektive Investitionen in Early-Stage-Companys. Fokus auf SaaS, eCommerce und Agenturmodelle mit klarem Wachstumspfad zur Skalierung.
-              </p>
-            </div>
-          </div>
         </div>
         <div class="mt-8">
-          <a href="#kontakt" class="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 hover:bg-blue-700 transition focus-ring hover:scale-[1.02] transition-transform duration-200">Verfügbarkeit anfragen</a>
+          <a href="mailto:moritz.heller@mh-beteiligungen.com" class="inline-flex items-center justify-center rounded-lg px-5 py-3 text-sm font-medium bg-gradient-to-r from-blue-500 to-blue-600 text-white border-0 hover:bg-blue-700 transition focus-ring hover:scale-[1.02] transition-transform duration-200">Verfügbarkeit anfragen</a>
         </div>
       </div>
     </section>
 
     <!-- Ventures / Beteiligungen -->
-    <section id="ventures" class="py-20 bg-gradient-to-b from-slate-50 via-blue-50 to-white border-t border-slate-300">
+    <section id="ventures" class="section-track py-20 bg-gradient-to-b from-slate-50 via-blue-50 to-white border-t border-slate-300">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="serif text-3xl sm:text-4xl font-semibold">Beteiligungen</h2>
         <div class="h-0.5 w-16 bg-blue-600/20 mt-2"></div>
@@ -182,7 +183,7 @@
           <a href="mh-beteiligungen.html" target="_blank" rel="noopener" class="block rounded-xl p-6 bg-[#325170] text-white transition transform hover:scale-[1.02] hover:shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
             <div class="flex items-center justify-center h-full">
               <div class="bg-white rounded-lg px-5 py-4 shadow-sm">
-                <img src="https://media.licdn.com/dms/image/v2/D4D3DAQEZffK_YWcBRA/image-scale_191_1128/image-scale_191_1128/0/1716128663646/mh_beteiligungen_gmbh_cover?e=2147483647&v=beta&t=R0sFcflYNNN8sUN3ABamrQArhmxXeMA_mN4vcugQMdo" alt="MH Beteiligungen Logo" class="h-10 object-contain" />
+                <img src="https://res.cloudinary.com/dujghnaly/image/upload/v1764241449/mh_beteiligungen_gmbh_cover_c0leb6.jpg" alt="MH Beteiligungen Logo" class="h-10 object-contain" />
               </div>
             </div>
           </a>
@@ -205,7 +206,7 @@
     </section>
 
     <!-- Footer -->
-    <footer id="kontakt" class="relative pt-8 pb-[2px] overflow-hidden bg-gradient-to-r from-blue-50 via-white to-slate-50 border-t-2 border-blue-200">
+    <footer id="kontakt" class="relative pt-8 pb-[2px] overflow-hidden bg-white border-t border-slate-300">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div>
@@ -263,6 +264,37 @@
       // Set current year
       const yearEl = document.getElementById('year');
       if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      // Highlight the section whose center is closest to the viewport center
+      const trackSections = document.querySelectorAll('.section-track');
+
+      function updateSectionHighlight() {
+        if (!trackSections.length) return;
+        const viewportCenter = window.innerHeight / 2;
+        let closest = null;
+        let closestDist = Infinity;
+
+        trackSections.forEach(sec => {
+          const rect = sec.getBoundingClientRect();
+          const secCenter = rect.top + rect.height / 2;
+          const dist = Math.abs(secCenter - viewportCenter);
+          if (dist < closestDist) {
+            closestDist = dist;
+            closest = sec;
+          }
+        });
+
+        trackSections.forEach(sec => sec.classList.remove('section-track-highlighted'));
+        if (closest) {
+          closest.classList.add('section-track-highlighted');
+        }
+      }
+
+      if (trackSections.length) {
+        updateSectionHighlight();
+        window.addEventListener('scroll', updateSectionHighlight);
+        window.addEventListener('resize', updateSectionHighlight);
+      }
     </script>
   </body>
 </html>
